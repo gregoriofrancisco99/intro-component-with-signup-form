@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/style/style.css">
 
   <title>Frontend Mentor | Intro component with sign up form</title>
 
@@ -26,31 +27,32 @@
 <body>
 
   <main>
-    <article id="leftScreen">
-      <h2>Learn to code by watching others</h2>
+    <article class="screen" id="leftScreen">
+      <div id="textWrapper">
+        <h1>Learn to code by watching others</h1>
 
-      See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-      but understanding how developers think is invaluable.
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.</p>
+      </div>
     </article>
 
 
-    <div id="leftScreen">
-      <div id="announce">
+    <div class="screen" id="rightScreen">
+      <div class="boxShadow" id="announce">
         <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
       </div>
 
-      <form action="">
+      <form class="boxShadow" action="">
         <fieldset>
           <label for="First Name">First Name</label>
           <input type="text" placeholder="First Name">
-          <label for="Last Name">Last Name</label>
           <input type="text" placeholder="Last Name">
           <label for="Email Address">Email Address</label>
           <input type="email" placeholder="Email Address">
           <label for="Password"></label>
           <input type="password" placeholder="Password">
 
-          <input type="submit" value="Claim your free trial">
+          <input class="boxShadow" type="submit" value="Claim your free trial">
 
           <small id="warning">By clicking the button, you are agreeing to our <span>Terms and Services</span></small>
         </fieldset>

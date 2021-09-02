@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: 15px;
+  font-family: "Poppins", "sans-serif";
+  color: #fff;
+}
+main {
+  background: url("./../images/bg-intro-desktop.png") no-repeat,
+    hsl(0, 100%, 74%);
+  background-size: cover;
+  background-position: center center;
+
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 2em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+main .screen {
+  width: 50%;
+  height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+}
+
+main .screen#leftScreen {
+  padding-right: 5.25em;
+  align-items: flex-end;
+}
+main .screen#leftScreen #textWrapper {
+  width: 78%;
+}
+main .screen#leftScreen #textWrapper h1 {
+  margin-bottom: 0.5em;
+  font-size: 40px;
+  line-height: 1.15em;
+}
+main .screen#leftScreen #textWrapper p {
+  font-weight: 500;
+}
+
+main .screen#rightScreen {
+  padding-left: 0em;
+  align-items: flex-start;
+}
+main .screen#rightScreen #announce {
+  width: 65%;
+  padding: 1em 0;
+  background: hsl(248, 32%, 49%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  border-radius: 0.5em;
+}
+
+main .screen#rightScreen form {
+  width: 65%;
+  margin-top: 1.5em;
+  padding: 2.5em;
+  background: #fff;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+
+  border-radius: 0.5em;
+}
+main .screen#rightScreen form fieldset {
+  border: none;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+}
+main .screen#rightScreen form label {
+  display: none;
+}
+main .screen#rightScreen form input {
+  padding: 0.75em 2em;
+  margin-bottom: 1.25em;
+  color: #000;
+  font-weight: 600;
+
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  border-radius: 0.3em;
+  outline: none;
+  transition: all ease 0.2s;
+}
+main .screen#rightScreen form input:focus,
+main .screen#rightScreen form input:active {
+  border: solid 1px hsl(249, 10%, 26%);
+}
+main .screen#rightScreen form input[type="submit"] {
+  background: hsl(154, 59%, 51%);
+  margin: 0 0 0.75em 0;
+  text-transform: uppercase;
+  color: #fff;
+}
+main .screen#rightScreen form small,
+main .screen#rightScreen form small span {
+  font-size: 10px;
+  color: hsl(246, 25%, 77%);
+  text-align: center;
+}
+main .screen#rightScreen form small span {
+  font-weight: 700;
+  color: hsl(0, 100%, 74%);
+}
+
+.boxShadow {
+  box-shadow: rgba(25, 28, 46.5, 0.17) 0px 7px 1px 0px;
+}
+@media (max-width: 991px) {
+  * {
+    font-size: 13px;
+  }
+  main {
+    height: 100vh;
+    flex-direction: column;
+  }
+  main .screen#leftScreen {
+    padding: 0;
+    margin: 5em 0;
+    align-items: center;
+  }
+  main .screen {
+    width: 500px;
+    height: auto;
+  }
+  main .screen#leftScreen #textWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main .screen#leftScreen #textWrapper h1 {
+    margin-bottom: 0.5em;
+    font-size: 35px;
+    text-align: center;
+  }
+  main .screen#leftScreen #textWrapper p {
+    text-align: center;
+  }
+  main .screen#rightScreen {
+    align-items: center;
+  }
+  main .screen#rightScreen #announce {
+    width: 75%;
+    padding: 1.5em 0;
+  }
+
+  main .screen#rightScreen form {
+    width: 75%;
+  }
+  main .screen#rightScreen form input {
+    padding: 0.75em 1em;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    height: inherit;
+  }
+  main .screen#leftScreen #textWrapper h1 {
+    font-size: 30px;
+  }
+  main .screen#rightScreen #announce {
+    width: 325px;
+    padding: 1.5em 2em;
+    text-align: center;
+  }
+  main .screen#rightScreen form {
+    width: 325px;
+  }
+}
