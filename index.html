@@ -27,14 +27,16 @@
 <body>
 
   <main>
-    <article class="screen" id="leftScreen">
-      <div id="textWrapper">
-        <h1>Learn to code by watching others</h1>
-
-        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-          but understanding how developers think is invaluable.</p>
-      </div>
-    </article>
+    <aside class="screen" id="leftScreen">
+      <article>
+        <div id="textWrapper">
+          <h1>Learn to code by watching others</h1>
+      
+          <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+            but understanding how developers think is invaluable.</p>
+        </div>
+      </article>
+    </aside>
 
 
     <div class="screen" id="rightScreen">
@@ -42,16 +44,24 @@
         <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
       </div>
 
-      <form class="boxShadow" action="">
+      <form class="boxShadow" action="" onsubmit="return(formValidator());">
         <fieldset>
-          <label for="First Name">First Name</label>
-          <input type="text" placeholder="First Name">
-          <input type="text" placeholder="Last Name">
-          <label for="Email Address">Email Address</label>
-          <input type="email" placeholder="Email Address">
-          <label for="Password"></label>
-          <input type="password" placeholder="Password">
-
+          <div class="textBox firstName">
+            <input type="text" placeholder="First Name" id="firstName">
+            <p class="alert"></p>
+          </div>
+          <div class="textBox lastName">
+            <input type="text" placeholder="Last Name" id="lastName">
+            <p class="alert"></p>
+          </div>
+          <div class="textBox email">
+            <input type="email" placeholder="Email Address" id="email">
+            <p class="alert"></p>
+          </div>
+          <div class="textBox password">
+            <input type="password" placeholder="Password" id="password">
+            <p class="alert"></p>
+          </div>
           <input class="boxShadow" type="submit" value="Claim your free trial">
 
           <small id="warning">By clicking the button, you are agreeing to our <span>Terms and Services</span></small>
@@ -66,6 +76,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  <script src="./assets/js/validateForm.js"></script>
 </body>
 
 </html>

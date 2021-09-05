@@ -86,9 +86,13 @@ main .screen#rightScreen form fieldset {
   justify-content: center;
   flex-direction: column;
 }
-main .screen#rightScreen form label {
-  display: none;
+
+main .screen#rightScreen form fieldset .textBox {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
 }
+
 main .screen#rightScreen form input {
   padding: 0.75em 2em;
   margin-bottom: 1.25em;
@@ -166,6 +170,7 @@ main .screen#rightScreen form small span {
   main .screen#rightScreen form {
     width: 75%;
   }
+
   main .screen#rightScreen form input {
     padding: 0.75em 1em;
   }
