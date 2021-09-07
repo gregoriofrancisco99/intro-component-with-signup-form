@@ -101,6 +101,13 @@ main form .textBox {
   border-color: hsl(249.5, 36.1%, 76.1%);
   opacity: 1;
 }
+.textBox .alert {
+  color: rgb(255, 0, 0);
+  font-size: 10px;
+  font-family: inherit;
+  text-align: right;
+  margin-top: 0.75em;
+}
 
 form input[type="submit"] {
   background: hsl(154, 59%, 51%);
@@ -128,8 +135,32 @@ form small span {
   color: hsl(0, 100%, 74%);
   font-weight: 700;
 }
-
-@media (max-width: 700px) {
+@media (max-width: 1200px) {
+  aside article {
+    padding-left: 5em;
+  }
+}
+@media (max-width: 1110px) {
+  article aside {
+    padding-left: 9em;
+  }
+  #wrapper .screen#rightScreen {
+    align-items: center;
+  }
+  main div#announce,
+  main form {
+    width: 400px;
+  }
+}
+@media (max-width: 950px) {
+  aside article {
+    padding-left: 2em;
+  }
+  #wrapper .screen#rightScreen {
+    padding-bottom: 5em;
+  }
+}
+@media (max-width: 900px) {
   * {
     font-size: 14px;
   }
@@ -140,12 +171,13 @@ form small span {
   }
   #wrapper .screen {
     width: 100%;
-    padding: 2em 0;
+    padding: 2em 0 0;
     align-items: center;
   }
   aside article {
-    margin-bottom: 5em;
-    padding: 0 2em;
+    width: 500px;
+    margin-bottom: 3em;
+    padding: 0 5.5em;
     text-align: center;
   }
   aside article h1 {
@@ -157,6 +189,9 @@ form small span {
   }
 }
 @media (max-width: 550px) {
+  aside article {
+    width: 100%;
+  }
   #wrapper .screen:nth-child(2) {
     padding: 0 2em;
   }

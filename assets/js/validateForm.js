@@ -5,6 +5,7 @@ function formValidator() {
   var password = document.getElementById('password').value;
 
   function emailValidator() {
+    console.log('here!')
     let atPos = email.indexOf('@');
     let dotPos = email.lastIndexOf('.');
 
@@ -25,6 +26,9 @@ function formValidator() {
   }
   if (email ==! '') {
     emailValidator();
+  }
+  else if(email == '') {
+    document.querySelector('.textBox.email .alert').innerHTML = 'Email cannot be empty';
   }
 
   if (password == '') {
