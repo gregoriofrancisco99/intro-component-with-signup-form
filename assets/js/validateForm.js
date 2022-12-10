@@ -29,8 +29,8 @@ function formValidator(event) {
   }
   if (lastName.value == '') {
     lastName.classList.add('failed');
-    document.querySelector('.textBox.firstName .alert').classList.add('failed');
-    document.querySelector('.textBox.firstName img').classList.add('failed');
+    document.querySelector('.textBox.lastName .alert').classList.add('failed');
+    document.querySelector('.textBox.lastName img').classList.add('failed');
   }
   if (email ==! '') {
     emailValidator();
